@@ -59,7 +59,7 @@ Go to Access bindings
 Grant roles:
 viewer
 container-registry.images.puller
-Assign them to All users
+Grant the required pull permissions to the virtual machine service account following the principle of least privilege.
 This allows virtual machines to pull images from the registry.
 
 ## Run a VM Using the Container Image

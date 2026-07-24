@@ -14,7 +14,7 @@ conn cloud-to-onprem
     right=<onprem_public_ip>
     rightsubnet=192.xxx.0.0/24
 
-    ike=aes256-sha2_256-modp1024!
+    ike=aes256-sha2_256-modp2048!
     esp=aes256-sha2_256!
 
     ikelifetime=1h

@@ -56,7 +56,7 @@ The function executes:
 ```sql
 SELECT result, response_time
 FROM measurements
-ORDER BY time DESC
+ORDER BY response_time DESC
 LIMIT 50;
 ```
 

@@ -1,6 +1,6 @@
 resource "yandex_mdb_postgresql_cluster" "this" {
   name        = "postgres-1"
-  environment = "PRESTABLE"
+  environment = "PRODUCTION"
   network_id  = var.network_id
 
   config {

@@ -22,10 +22,10 @@ instance_template:
     metadata:
       user-data: |-
         #cloud-config
-          package_update: true
-          runcmd:
-            - [ apt-get, install, -y, nginx ]
-            - [ /bin/bash, -c, 'source /etc/lsb-release; sed -i "s/Welcome to nginx/It is $(hostname) on $DISTRIB_DESCRIPTION/" /var/www/html/index.nginx-debian.html' ]
+        package_update: true
+        runcmd:
+          - [ apt-get, install, -y, nginx ]
+          - [ /bin/bash, -c, 'source /etc/lsb-release; sed -i "s/Welcome to nginx/It is $(hostname) on $DISTRIB_DESCRIPTION/" /var/www/html/index.nginx-debian.html' ]
 
 deploy_policy:
     max_unavailable: 1

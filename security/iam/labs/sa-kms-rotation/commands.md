@@ -10,7 +10,7 @@ yc iam service-account create \
 ## Grant Permissions to Manage Service Account
 ```
 yc iam service-account add-access-binding <sa-id> \
-  --role editor \
+  --role iam.serviceAccounts.user \
   --subject userAccount:<user-id>
 ```
 
